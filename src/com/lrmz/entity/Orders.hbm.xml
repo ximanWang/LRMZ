@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.lrmz.entity">
+	<class name="Orders" table="orders">
+		
+		<id name="id" type="java.lang.Integer" 
+			column="id">
+			<!-- 用来指明主键的生成方式 -->
+			<generator class="native"></generator>
+		</id>
+		<property name="oid" 
+			type="java.lang.String" column="oid" />
+		<property name="order_time" 
+			type="java.sql.Date" column="order_time" />
+		<property name="totalprice" 
+			type="java.lang.Double" column="totalprice" />
+		<property name="status" 
+			type="java.lang.Integer" column="status"/>
+		<!-- 与用户多对一 -->
+		<many-to-one name="user" class="User" >
+			<column name="uid"></column>
+		</many-to-one>
+<!--		 与商品多对一 -->
+<!--		<many-to-one name="order" class="Order">-->
+<!--			<column name="gid"></column>-->
+<!--		</many-to-one>-->
+	</class>
+</hibernate-mapping>

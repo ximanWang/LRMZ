@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+        
+<validators>
+	<!-- name值为需要被校验的字段，这里对username字段进行校验 -->
+	<field name="username">
+        <field-validator type="requiredstring">
+            <message>用户名不能为空</message>
+        </field-validator>     
+    </field>
+	
+	<field name="passwd">
+        <field-validator type="requiredstring">
+            <message>密码不能为空</message>
+        </field-validator>
+        <!-- stringlength：字符串长度校验 -->
+        <field-validator type="stringlength">
+            <!-- 为校验器指定参数实现不同的校验规则，minlength：最少长度 -->
+            <param name="minLength">6</param>
+            <message>密码长度不能少于6位</message>
+        </field-validator>
+    </field>
+    
+    <!-- 校验两次密码是否一致，使用 fieldexpression 校验器。expression参数指定判断用的表达式-->
+    <field name="repasswd">
+        <field-validator type="fieldexpression">
+            <!-- 表达式要写在   <![CDATA[]]>   内 -->
+            <param name="expression"><![CDATA[repassword==password]]></param>
+            <message>两次密码不一至</message>
+        </field-validator>
+    </field>
+	
+	<!-- name值为需要被校验的字段，这里对email字段进行校验 -->
+    <field name="email">
+        <!-- type值为校验器名，requiredstring：非空字符串校验器 -->
+        <field-validator type="requiredstring">
+            <message>邮箱不能为空</message>
+        </field-validator>
+        <!-- 一个字段可以配置多个校验器，email：校验邮箱格式 -->
+        <field-validator type="email">
+            <message>邮箱格式不正确</message>
+        </field-validator>
+    </field>
+    
+    <field name="address">
+        <field-validator type="requiredstring">
+            <message>收货地址不能为空</message>
+        </field-validator>     
+    </field>
+    
+    <!-- 校验电话格式，使用regex正则表达示校验，regexExpression参数指定正则表达式 -->
+    <field name="phone">
+    	<field-validator type="requiredstring">
+            <message>联系方式不能为空</message>
+        </field-validator>
+        <field-validator type="regex">
+            <param name="regexExpression"><![CDATA[\d{11}]]></param>
+            <message>电话号码格式不正确</message>
+        </field-validator>
+    </field>
+</validators>

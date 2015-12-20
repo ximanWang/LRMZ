@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+ <struts>
+ 	<package name="cart" namespace="/user" extends="lrmz">
+ 		<!-- 查看购物车Action -->
+ 		<action name="findAllCarts" class="com.lrmz.action.cart.FindAllCartsAction">
+ 			<result name="success">
+ 				/WEB-INF/user/cart_list.jsp
+ 			</result>
+ 		</action>
+ 		<!-- 加入购物车 -->
+ 		<action name="cartAction" class="com.lrmz.action.cart.ToCartAction">
+ 			<result name="success" type="redirectAction">
+ 				findAllCarts
+ 			</result>
+ 		</action>
+ 		<!-- 清空购物车 -->
+ 		<action name="clearAction" class="com.lrmz.action.cart.ClearCartAction">
+ 			<result name="success" type="redirectAction">
+ 				findAllCarts
+ 			</result>
+ 		</action>
+ 		<!-- 删除一条商品 -->
+ 		<action name="deleteOne" class="com.lrmz.action.cart.DeleteOne">
+ 			<result name="success" type="redirectAction">
+ 				findAllCarts
+ 			</result>
+ 		</action>
+ 		<!-- 更新数量 -->
+ 		<action  name="update" class="com.lrmz.action.cart.UpdateAction">
+ 			<result name="success" type="redirectAction">
+ 				findAllCarts
+ 			</result>
+ 		</action>
+ 		<!-- 前往结算页面 -->
+ 		 <action name="toBuy" class="com.lrmz.action.cart.FindAllCartsAction">
+ 			<result name="success">
+ 				/WEB-INF/user/buy.jsp
+ 			</result>
+ 		</action> 
+ 		<!-- 前往支付页面 -->
+ 		<action name="toPay" >
+ 			<result name="success">
+ 				/WEB-INF/user/pay.jsp
+ 			</result>
+ 		</action>
+ 		<action name="updateUser" class="com.lrmz.action.user.UpdateUserByIdAction">
+ 			<result name="ok" type="redirectAction" >
+ 				toBuy
+ 			</result>
+ 			<result name="error" type="redirectAction"  >
+ 				toBuy
+ 			</result>
+ 		</action>
+
+		<!-- 前往支付完成页面l -->
+ 		<action name="toFinish">
+ 			<result name="success">
+ 				/WEB-INF/user/finish.jsp
+ 			</result> 		
+ 		</action>
+ 	</package>
+
+ </struts>

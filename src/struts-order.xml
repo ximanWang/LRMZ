@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+ <struts>
+ 	<package name="order" namespace="/user" extends="struts-default">
+ 		<!-- 查看订单 -->
+ 		<action name="findAllOrder" class="com.lrmz.action.order.FindAllOrderAction">
+ 			<result name="success">
+ 				/WEB-INF/user/order_list.jsp
+ 			</result>
+ 		</action>
+ 		<!-- 保存订单-->
+ 		<action name="toPay" class="com.lrmz.action.order.AddOrderAction">
+ 			<result name="success">
+ 				/WEB-INF/user/pay.jsp
+ 			</result>
+ 		</action> 
+ 		<!-- 显示完成界面 -->
+ 		<action name="toFinish" >
+ 			<result name="success">
+ 				/WEB-INF/user/finish.jsp
+ 			</result>
+ 		</action>
+ 	</package>
+ </struts>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.lrmz.entity">
+	<class name="User" table="user">
+		
+		<id name="userID" type="java.lang.Integer" column="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="userName" 
+			type="java.lang.String" column="user_name" ></property>
+		<property name="password" 
+			type="java.lang.String" column="password" ></property>
+		<property name="sex"
+			type="java.lang.Integer" column="sex"></property>
+		<property name="email" 
+			type="java.lang.String" column="email" ></property>
+		<property name="face" 
+			type="java.lang.String" column="face" ></property>
+		<property name="address" 
+			type="java.lang.String" column="address" ></property>
+		<property name="phone" 
+			type="java.lang.String" column="phone" ></property>
+		<!-- <set name="carts" cascade="all" inverse="true">
+			<key column="uid"></key>
+			<one-to-many class="Cart"></one-to-many>
+	    </set> -->
+	</class>
+</hibernate-mapping>

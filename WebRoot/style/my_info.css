@@ -1,0 +1,83 @@
+@charset "UTF-8";
+.my_form ul{
+	width:100%;
+	font-size:14px}
+.my_form li{
+	padding:8px 0 8px 90px;
+	position:relative;+zoom:1;
+	line-height:25px}
+.my_form li.userface{
+	height:100px}
+.my_form li .iface .face{
+	display:block;
+	float:left;
+	width:100px;
+	height:100px;
+	position:relative}
+.my_form li .iface .edit_face{
+	position:absolute;
+	height:20px;
+	line-height:20px;
+	width:100px;
+	display:block;
+	background:#000;
+	background:rgba(0,0,0,.5);
+	text-align:center;
+	color:#fff;
+	left:1px;
+	bottom:-1px;
+	_bottom:0;
+	filter:alpha(opacity=50);
+	margin:0}
+.iface .face img,.ilizi .face img{
+	width:100px;height:100px;
+	border:1px solid #e4e4e4}
+.my_form li span{
+	color:#bbb}
+.my_form li .username span{
+	margin-left:50px}
+.my_form label{position:absolute;
+	left:25px;
+	top:8px;
+	text-align:left;
+	display:inline-block;
+	width:100px}
+.my_form li.radio_li input{vertical-align:-2px;
+	_vertical-align:-3px;
+	margin-right:2px}
+.my_form li select{
+	margin-right:5px}
+.my_form li a{
+	margin-left:15px;
+    color:#ff666b}
+.my_form .form_submit{
+	padding:20px 0 20px 90px}
+.uploader{position:relative;
+	margin-bottom:5px}
+.uploader-button{display:block;
+	width:119px;
+	height:27px;
+	text-indent:9999px;
+	background:url(http://s.lizi.com/www/images/qq-upload-button.png) no-repeat;
+	cursor:pointer;overflow:hidden}
+.uploader-button-hover{background-position:0 -27px}
+.uploader-button span.txt{display:none}
+.avatar_demo_pic{width:300px;
+	height:300px;border:1px solid #ccc;
+	background:url(http://s.lizi.com/www/images/uploader_avatar.png) no-repeat #f4f4f4;
+	display:block;
+	margin-bottom:8px}
+.avatar_form .uploader{
+	width:302px}
+.avatar_form .uploader-button{
+	margin:0 auto}
+.avatar_form .r{
+	padding-left:30px;
+	vertical-align:top}
+.avatar_tip{
+	margin-bottom:20px}
+.avatar_preview{
+	width:150px;
+	height:150px;margin-left:35px;
+	overflow:hidden;
+	background-color:#f4f4f4}

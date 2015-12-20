@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.lrmz.entity">
+	<class name="Cart" table="cart">
+		<id name="id" type="java.lang.Integer" 
+			column="id">
+		<!-- 用来指明主键的生成方式 -->
+			<generator class="native"></generator>
+		</id>
+		<property name="num" 
+			type="java.lang.Integer" column="num" />
+		<property name="subtotal" 
+			type="java.lang.Double" column="subtotal" />
+		<!-- 与用户多对一 -->
+		<many-to-one name="user" class="User" >
+			<column name="uid" ></column>
+		</many-to-one>
+		<!-- 与商品多对一 -->
+		<many-to-one name="goods" class="Goods" lazy="false">
+			<column name="gid" ></column>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,192 @@
+/* CSS Document */
+.brands_box li a,.hot_items li,.pro_list li{border-bottom:1px solid #eee}
+body{background:#f5f5f5}
+#footer .ft_txt .link{display:block}
+
+/*
+.index-slide{width:100%;height:500px;position:relative;overflow:hidden;background:url(http://cdn.lizi.com/images/pc/loading-lizi.gif) center center no-repeat}
+.index-slide ul{height:500px;overflow:hidden}
+.index-slide li{width:100%;height:500px;overflow:hidden;position:absolute;left:0;top:0;background-position:center 0;background-repeat:no-repeat}
+.index-slide li:first-child{z-index:2}
+.index-slide li a{display:block;height:500px;width:1196px;margin:0 auto}
+.index-slide .trigger-box{width:400px;margin:0 auto 0 -200px;position:absolute;bottom:20px;left:50%;z-index:10}
+.index-slide .triggers{text-align:center;font-size:0}
+.trigger-box .triggers a{display:inline-block;width:0;padding:13px 0 0 13px;height:0;line-height:0;overflow:hidden;background-color:#333;background:rgba(51,51,51,.5);filter:Alpha(opacity=80);border-radius:13px;text-align:center;font-size:14px;font-weight:700;color:#fff;font-family:arial;margin-right:10px}
+.trigger-box .triggers a:hover{text-decoration:none;color:#fff}
+.trigger-box .triggers a.current{background:#ff666b;filter:Alpha(opacity=100)}
+*/
+/*主页轮播*/
+.turn{width:100%;height:500px;overflow:hidden;position:relative;} 
+.turn #adpica{width:100%;height:500px;overflow:hidden;} 
+.turn #adpica img{width:140%; height:500px; float:left; overflow:hidden; margin-left:-240px;} 
+.turn #adtipa{margin:0 10px; position:absolute; bottom:20px; left:46%; z-index:10;} 
+.turn #adtipa ul li{width: 19px; height: 19px; line-height: 19px; float: left; text-align: center; display: inline;margin: 0 1px;cursor: pointer;color: #fff;background: #949494;} 
+.turn #adtipa ul li.current{color: #fff;background: #333;} 
+.turn .hidden{display: none;} 
+.turn .show{display: block !important;} 
+#adpica span{position: absolute;bottom: 0;left: 0;color: #fff;font-size: 14px;height: 33px;width: 380px;filter: alpha(opacity=70);opacity: 0.7;background: #000;text-indent: -9999em;} 
+#adpica p{position: absolute;bottom: 0;left: 0;color: #fff;font-size: 14px; height: 33px; line-height: 33px; width: 285px;padding-left: 5px; font-weight: bold;}
+#adtipa ul{text-align:center;}
+
+.scroll{
+		width:80px;
+		height:80px;
+		background:#64BFAE;
+		color:#fff;
+		line-height:80px;
+		text-align:center;
+		position:fixed;
+		right:30px;
+		bottom:50px;
+		cursor:pointer;
+		font-size:14px;
+	}
+
+.buy60s_bg{padding-top:10px}
+.buy60s_main{width:1200px;margin:0 auto;background:#fff;box-shadow:0 -2px 12px 0 rgba(39,45,51,.15);position:relative}
+.buy60s_head{height:50px;padding:10px;overflow:hidden;background:url(http://cdn.lizi.com/images/pc/60s-hd.png) 15px 15px no-repeat;position:relative}
+.buy60s_head .timedown{position:absolute;right:20px;top:16px;font-size:16px}
+.buy60s_head .timedown .sec{margin:0 5px}
+.buy60s_head .timedown .sec em{display:inline-block;width:20px;height:36px;background:url(http://cdn.lizi.com/images/pc/num-8.png) 0 6px no-repeat;overflow:hidden;-webkit-transition:all .5s;-ms-transition:all .5s;transition:all .5s;vertical-align:-10px;transform:translateZ(0)}
+.buy60s_head .timedown .sec em.s0{background-position:0 6px}
+.buy60s_head .timedown .sec em.s1{background-position:0 -30px}
+.buy60s_head .timedown .sec em.s2{background-position:0 -66px}
+.buy60s_head .timedown .sec em.s3{background-position:0 -102px}
+.buy60s_head .timedown .sec em.s4{background-position:0 -138px}
+.buy60s_head .timedown .sec em.s5{background-position:0 -174px}
+.buy60s_head .timedown .sec em.s6{background-position:0 -210px}
+.buy60s_head .timedown .sec em.s7{background-position:0 -246px}
+.buy60s_head .timedown .sec em.s8{background-position:0 -282px}
+.buy60s_head .timedown .sec em.s9{background-position:0 -318px}
+#buy60s_silde{width:5980px;position:absolute;top:0;left:0}
+.buy60s_list{position:relative;+zoom:1}
+.buy60s_box{position:relative;overflow:hidden;width:1170px;height:430px;background:url(http://cdn.lizi.com/images/pc/loading-lizi.gif) 550px 150px no-repeat;margin:0 auto}
+.buy60s_box ul{float:left;width:1185px}
+.buy60s_box li{width:380px;padding-right:15px;height:412px;overflow:hidden;float:left;position:relative}
+.buy60s_box li a{display:block;border:1px solid #f5f5f5;width:378px;height:410px;text-align:center;position:relative}
+.buy60s_box li a:hover{text-decoration:none}
+.buy60s_box li img{width:290px;height:290px;vertical-align:top;background:url(http://cdn.lizi.com/images/pc/loading-lizi.gif) center center no-repeat}
+.buy60s_box li p{position:absolute;z-index:3;-webkit-transition:all .6s;-ms-transition:all .6s;transition:all .6s}
+.buy60s_box li .title{font-size:14px;line-height:24px;overflow:hidden;height:44px;left:0;top:290px;padding:0 30px;text-align:left}
+.buy60s_box li .tag{margin-right:10px;padding:2px 10px;border:1px solid #ff666b;border-radius:3px;font-size:12px;color:#ff666b;background-color:#fff}
+.buy60s_box li .bg{left:0;bottom:0;z-index:2;width:380px;height:0;padding:0;visibility:hidden;opacity:0;background:rgba(255,102,107,.8);filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#90ff666b', endColorstr='#90ff666b');-webkit-transition:all .3s;-ms-transition:all .3s;transition:all .3s}
+.buy60s_next,.buy60s_prve,.hot_items li,.hot_items li .mask{transition:all .5s;-ms-transition:all .5s}
+.buy60s_next,.buy60s_prve,.buy60s_trig,.hot_items li,.hot_items li .mask{-webkit-transition:all .5s}
+.buy60s_next,.buy60s_prve,.buy60s_trig .triggers{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#50000000', endColorstr='#50000000')}
+.buy60s_next,.buy60s_prve,.buy60s_trig{visibility:hidden;opacity:0;z-index:10}
+.buy60s_box li .now{top:345px;color:#ff666b;font-size:26px;font-weight:700;font-family:arial}
+.buy60s_box li .old{top:380px;color:#666;text-decoration:line-through}
+.hot_active li a:hover,.hot_items li .pic a:hover,.pro_list li a:hover{text-decoration:none}
+.buy60s_box li .now,.buy60s_box li .old{width:200px;left:30px}
+.buy60s_box li .btn{display:block;font-size:14px;position:absolute;right:30px;bottom:20px;border:none;padding:0;width:110px;text-align:center;height:36px;line-height:36px;border-radius:0}
+.buy60s_box li .offbtn{background:#ddd;color:#aaa}
+.buy60s_box li:hover .bg{visibility:visible;opacity:1;height:130px}
+.buy60s_box li:hover .title{color:#fff}
+.buy60s_box li:hover .now{color:#fde35b}
+.buy60s_box li:hover .old{color:#fff}
+.buy60s_box li:hover .btn,.buy60s_box li:hover .btn:hover{color:#ff666b;background-color:#fff}
+.buy60s_trig{position:absolute;top:470px;left:50%;margin-left:-60px;width:120px;-ms-transition:all .5s;transition:all .5s}
+.buy60s_trig .triggers{width:120px;text-align:center;padding:5px 0 4px;background:rgba(0,0,0,.5);border-radius:3px;box-shadow:0 0 5px 0 rgba(39,45,51,.7)}
+.buy60s_trig .triggers a{cursor:pointer;display:inline-block;padding-top:10px;width:10px;height:0;overflow:hidden;border-radius:6px;border:1px solid #fff;margin:0 4px;font-size:0}
+.buy60s_trig .triggers a.current{background-color:#fff}
+.buy60s_next,.buy60s_prve{width:36px;height:36px;position:absolute;top:150px;background:rgba(0,0,0,.5);font-size:16px;color:#fff;line-height:36px;border-radius:22px;text-align:center;box-shadow:0 0 5px 0 rgba(39,45,51,.7)}
+.buy60s_next:hover,.buy60s_prve:hover{text-decoration:none;background:rgba(0,0,0,.7);color:#fff}
+.buy60s_prve{left:16px}.buy60s_next{right:16px}
+.buy60s_ishover .buy60s_next,.buy60s_ishover .buy60s_prve,.buy60s_ishover .buy60s_trig{visibility:visible;opacity:1}
+.index_webintro{text-align:center;height:59px;overflow:hidden;padding-top:25px;margin-bottom:25px}.box_title{height:45px;line-height:45px;margin-bottom:15px}
+.box_title strong{color:#34495e;font-size:28px}
+.box_title span{margin-left:20px;font-size:16px}
+.hot_items{background-color:#fff;width:1200px;margin-bottom:30px;overflow:hidden}
+.hot_items ul{padding-top:15px;margin-right:-15px}
+.hot_items li{float:left;width:390px;margin-right:15px;margin-bottom:20px;background:#fff;padding-bottom:20px}
+.hot_items li .pic{position:relative;height:390px;overflow:hidden}
+.hot_items li .pic a{display:block;height:390px}
+.hot_items li .pic img{width:390px;height:390px;vertical-align:top}
+.hot_items li .mask{position:absolute;top:0;left:0;width:100%;height:390px;visibility:hidden;opacity:0;cursor:pointer;background:rgba(255,102,107,.8);filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#80ff666b', endColorstr='#80ff666b');z-index:2}
+.hot_items li .mask span{display:block;width:180px;padding:5px 0;text-align:center;border:1px solid #fff;font-size:18px;color:#fff;margin:150px auto 0}
+.hot_items li .mask span i{font-size:28px}.hot_items .info{padding:0 10px;position:relative}
+.hot_items .info .time{position:absolute;right:10px;top:10px;color:#9e9e9e}
+.hot_items .info .time i{font-size:14px}
+.hot_items .info .time .s{display:none}
+.hot_items .info .time em{color:#ff666b;margin-left:3px}
+.hot_items .info h5{font-size:14px;height:40px;line-height:40px;overflow:hidden;margin-right:130px}
+.hot_items .info .p_btn span{color:#9e9e9e;margin-right:10px;float:left}
+.hot_items .info .p_btn span.price{color:#ff666b}
+.hot_items .info .p_btn span.comment,.hot_items .info .p_btn span.sales{margin-top:7px}
+.hot_items .info .p_btn span.price strong{font-size:24px;font-weight:400;font-family:arial}
+.hot_items .info .p_btn span i{font-size:16px;margin-right:3px}
+.hot_items .info .p_btn .btn{border:none;background:url(http://cdn.lizi.com/images/pc/btn2015-txt.png) no-repeat;width:110px;height:35px;text-indent:200px;overflow:hidden;text-align:center;padding:0}
+.hot_items li:hover{box-shadow:0 1px 8px 0 rgba(0,0,0,.1),inset 0 -1px 0 0 rgba(240,240,240,.004)}
+.hot_items li:hover .mask{visibility:visible;opacity:1}
+.hot_active{margin-bottom:15px}
+.hot_active ul{margin-right:-20px}
+.hot_active li{position:relative;width:590px;height:390px;background:#fff;float:left;margin-right:20px;margin-bottom:20px;-webkit-transition:all .4s;-ms-transition:all .4s;transition:all .4s;border-radius:2px}
+.hot_active li img{width:590px;height:390px;border-radius:2px;vertical-align:top}
+.hot_active li span{display:inline-block}
+.hot_active li p{line-height:30px;position:absolute;right:0;top:360px;padding:0 20px}
+.hot_active li span.title{color:#555;float:left;visibility:hidden}
+.hot_active li span.orange{display:none}
+.hot_active li span.temail_timer{float:right;color:#999}
+.hot_active li span.temail_timer em{color:#ff666b;margin-left:3px}
+.hot_active li span.temail_timer i{margin-right:5px;font-size:14px}
+.hot_active li .mask{position:absolute;top:0;left:0;z-index:2;width:100%;height:390px;line-height:390px;background:rgba(100,100,100,.2);filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#20000000', endColorstr='#20000000');text-align:center;font-size:26px;color:#fff;text-shadow:1px 1px 3px rgba(0,0,0,.3)}
+.pro_list,.series_box{background-color:#fff}
+.hot_active li:hover{box-shadow:0 1px 8px 0 rgba(0,0,0,.15)}
+.series_box{margin-bottom:30px}
+.series_info{height:390px;overflow:hidden;padding-top:10px}
+.series_info div{float:left;overflow:hidden}
+.series_info .pic1{width:225px;padding:25px 55px 0 30px}
+.series_info .pic2{width:590px}
+.series_info .pic3{float:right;width:290px}
+.series_info img{-webkit-transition:all .6s;-ms-transition:all .6s;transition:all .6s;vertical-align:top}
+.series_info img:hover{-webkit-transform:scale3d(1.02,1.02,1);-ms-transform:scale3d(1.02,1.02,1);transform:scale3d(1.02,1.02,1)}.series_info .pic1 img:hover{-webkit-transform:none;-ms-transform:none;transform:none}
+.pro_list{padding-bottom:10px}.pro_list ul{zoom:1}
+.pro_list li{float:left;width:290px;overflow:hidden;margin-right:5px;margin-left:5px}
+.pro_list li .pic{text-align:center;padding:10px 0}
+.pro_list li .pic img{width:250px;height:250px;vertical-align:top}
+.pro_list li h3{color:#666;font-size:14px;height:40px;overflow:hidden;margin:15px}
+.pro_list li .btm{margin:0 15px}.pro_list li .btm span{color:#9e9e9e;margin-right:14px}
+.pro_list li .btm span.price{color:#ff666b;font-size:16px}
+.pro_list li .btm span.price strong{font-weight:400;font-family:arial}
+.pro_list li .btm span i{font-size:14px;margin-right:3px}
+.pro_list li a{display:block;height:365px;cursor:pointer;padding-bottom:15px}
+.pro_list li:hover{box-shadow:0 1px 8px 0 rgba(0,0,0,.1),inset 0 -1px 0 0 rgba(240,240,240,.004)}
+.floor_nav{position:fixed;_display:none;left:50%;margin-left:-670px;top:160px;visibility:hidden;opacity:0;-webkit-transition:all .4s;-ms-transition:all .4s;transition:all .4s}
+.brands_box .pic img,.brands_box li img{-webkit-transition:all .6s;transition:all .6s}
+.floor_nav li{width:60px;height:60px;overflow:hidden;color:#666;cursor:pointer;text-align:center;margin-bottom:1px}
+.floor_nav li em{display:block;background:url(http://cdn.lizi.com/images/pc/index-nav-ico.png) 0 10px no-repeat;width:24px;height:35px;margin:0 auto;overflow:hidden}
+.floor_nav li em.no1{background-position:0 6px}
+.floor_nav li em.no2{background-position:0 -55px}
+.floor_nav li em.no3{background-position:0 -115px}
+.floor_nav li em.no4{background-position:0 -176px}
+.floor_nav li.current,.floor_nav li:hover{background-color:#ff666b;color:#fff}
+.floor_nav li.current em.no1,.floor_nav li:hover em.no1{background-position:-78px 6px}
+.floor_nav li.current em.no2,.floor_nav li:hover em.no2{background-position:-78px -55px}
+.floor_nav li.current em.no3,.floor_nav li:hover em.no3{background-position:-78px -115px}
+.floor_nav li.current em.no4,.floor_nav li:hover em.no4{background-position:-78px -176px}
+.is1280 .floor_nav{margin-left:-632px}.is1280 .floor_nav li{width:30px}
+.is1280 .floor_nav li.t4{height:76px}
+.floor_nav_show{visibility:visible;opacity:1}
+.brands_box .pic{width:200px;height:480px;overflow:hidden}
+.brands_box .pic img{width:200px;height:480px;-ms-transition:all .6s}
+.brands_box .pic img:hover{-webkit-transform:scale3d(1.02,1.02,1);-ms-transform:scale3d(1.02,1.02,1);transform:scale3d(1.02,1.02,1)}
+.brands_box .list{float:left;width:800px;height:480px;overflow:hidden;background-color:#fff}
+.brands_box li{float:left;width:200px;height:80px;overflow:hidden;text-align:center}
+.brands_box li a{display:block;width:199px;height:79px;border-right:1px solid #eee}
+.brands_box li img{vertical-align:top;-ms-transition:all .6s;width:199px;height:79px}
+.brands_box li img:hover{vertical-align:top;-webkit-transform:translateY(-4px);-ms-transform:translateY(-4px);transform:translateY(-4px)}
+.footer_search{background:url(http://cdn.lizi.com/images/pc/index-footer-search-bg.jpg) center 0 no-repeat;height:280px}
+.footer_search .sbox{width:504px;margin:0 auto;padding-top:20px}
+.footer_search h5{text-align:center;color:#eee;font-size:14px}
+.footer_search .sform{height:28px;border:1px solid #666;border-radius:15px;overflow:hidden;margin-top:15px}
+.footer_search .sform .key{float:left;margin:4px 10px 0;width:430px;height:20px;line-height:20px;color:#bbb;outline:0;border:none;background:0 0}
+.footer_search .sform .submit{float:right;background:0 0;border:none;width:40px;height:30px;cursor:pointer;font-size:14px;color:#eee}
+.footer_search_hot{margin-top:10px;text-align:center}
+.footer_search_hot span{color:#999}
+.footer_search_hot a{margin:0 5px;color:#666}
+.footer_search_hot .intro_link,.footer_search_hot a.red,.footer_search_hot a:hover{color:#ff666b}
+.intro_link{padding-top:30px}
+.intro_link a{display:block;float:left;width:144px;height:120px}
+.intro_link a.mid{margin:0 34px}
+.top{ height:30px; line-height:30px; text-align:right; padding-right:120px; background-color:#F1F1F1; }
+.top a:hover{color:#F66; text-decoration:none; cursor:pointer;}

@@ -1,0 +1,1 @@
+define(function(){function a(a,b){function c(f){--d<=0&&f.target.src!==e&&(setTimeout(function(){b&&b()},0),a.off("load error",c))}var d=a.length,e="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";d||b&&b(),a.on("load error",c).each(function(){if(this.complete||void 0===this.complete){var a=this.src;this.src=e,this.src=a}})}return a});

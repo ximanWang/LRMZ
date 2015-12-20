@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+.pay_box dl,.pay_box dl dt{margin-bottom:20px;}
+.page{border:1px solid #ddd;background-color:#fff;padding:15px 20px;}
+.banks .banks-bd{height:54px;width:158px;overflow:hidden;cursor:pointer;background-color:#fff;position:relative;padding-left:24px;}
+.banks .banks-bd .ck{position:absolute;left:0;top:20px;display:none;width:14px;height:14px;overflow:hidden;}
+.banks .banks-bd .bd{border:1px solid #ddd;height:52px;}
+.banks .current .bd{border-color:#ff666b;}
+.banks .current .ck{background-position:0 -16px;}
+.banks .banks-bd label{cursor:pointer;}
+.banks label{background:url(../images/buy/banks-bg.png) -9999px 0 no-repeat;display:inline-block;width:156px;height:52px;vertical-align:middle;}
+.banks label.zhaoshang{background-position:14px -541px;}
+.banks label.gongshang{background-position:14px 11px;}
+.banks label.jianshe{background-position:14px -241px;}
+.banks label.nongye{background-position:14px -490px;}
+.banks label.jiaotong{background-position:14px -291px;}
+.banks label.zhongguo{background-position:14px -89px;}
+.banks label.youzheng{background-position:14px -38px;}
+.banks label.zhongxin{background-position:14px -592px;}
+.banks label.minsheng{background-position:14px -641px;}
+.banks label.xingye{background-position:14px -187px;}
+.banks label.guangda{background-position:14px -340px;}
+.banks label.guangfa{background-position:14px -691px;}
+.banks label.pufa{background-position:14px -392px;}
+.banks label.shanghai{background-position:14px -795px;}
+.banks label.shenzhenfz{background-position:14px -138px;}
+.banks label.beijing{background-position:14px -845px;}
+.banks label.huaxia{background-position:14px -1043px;}
+.banks label.pingan{background-position:14px -1086px;}
+.banks label.alipay{background-position:14px -943px;}
+.banks label.cft{background-position:14px -998px;}
+.banks label.wyzx{background-position:14px -893px;}
+.banks .banks-bd .ka-type{position:absolute;right:0;top:0;display:block;width:20px;height:51px;padding-top:2px;background-color:#136f40;overflow:hidden;color:#fff;text-align:center;line-height:16px;}
+.banks .banks-bd .fenqi-ico{position:absolute;right:0;top:0;display:block;width:62px;height:37px;background:url(http://s.lizi.com/www/images/order/fenqipay-ico.png) no-repeat;}
+.banks label.alipay_sm,.banks label.cmpay{background:url(http://s.lizi.com/www/images/order/pay-platform.png) -9999px 0 no-repeat;}
+.banks label.alipay_sm{background-position:right 0;}
+.banks label.cmpay{background-position:0 -62px;}
+.pay_box dl dt{color:#999;border-bottom:1px solid #ddd;padding-bottom:5px;}
+.pay_box dl dt b{font-size:18px;font-weight:400;color:#333;margin-right:10px;}
+.pay_box dd li{float:left;margin:0 50px 20px 0;height:54px;overflow:hidden;position:relative;}
+.pay_fd{padding:20px 150px 10px 0;border-top:1px solid #ddd;text-align:right;font-size:14px;color:#999;position:relative;}
+.pay_fd .bd .banks{display:inline-block;width:156px;height:52px;border:1px solid #ddd;vertical-align:middle;margin:0 20px;}
+.pay_fd .bd em{font-size:24px;font-family:Arial;margin:0 20px 0 2px;color:#ff666b;vertical-align:middle;}
+.pay_fd .pay_form{position:absolute;right:0;top:21px;}
+.pay_fd .pay_form .btn{height:40px;font-size:18px;padding:0 22px;}
+.pay_tipwin{padding:20px 50px;}
+.pay_tipwin h3{font-weight:700;margin-bottom:10px;}
+.pay_tipwin .btn-p{padding:10px 0 20px;}
+.pay_tipwin .btn-p a{margin-right:20px;font-size:14px;padding:6px 15px;}
+.pay_tipwin a.ud{text-decoration:underline;}
+#iframe-twocode{width:600px;}

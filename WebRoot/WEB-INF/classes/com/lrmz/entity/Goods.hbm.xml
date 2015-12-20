@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.lrmz.entity">
+	<class name="Goods" table="goods">
+		
+		<id name="goodsID" type="java.lang.Integer" column="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="cateName" 
+			type="java.lang.String" column="cname" ></property>
+		<property name="goodsName" 
+			type="java.lang.String" column="gname" ></property>
+		<property name="goodsNum" 
+			type="java.lang.Integer" column="gnum" ></property>
+		<property name="marketPrice"
+			type="java.lang.Double" column="mprice"></property>
+		<property name="price" 
+			type="java.lang.Double" column="lprice" ></property>
+		<property name="image" 
+			type="java.lang.String" column="gimg" ></property>
+		<property name="description" 
+			type="java.lang.String" column="gdesc" ></property>
+		<property name="gbrand" 
+			type="java.lang.String" column="gbrand" ></property>
+		<property name="pubTime" 
+			type="java.sql.Date" column="pubtime" ></property>
+		<property name="isShow" 
+			type="java.lang.Integer" column="ishow" ></property>
+		<!-- <set name="carts" inverse="true">
+			<key column="gid"></key>
+			<one-to-many class="Cart"></one-to-many>
+	    </set> -->
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,172 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family:'微软雅黑';
+}
+body{
+	background: #016BA9;
+	overflow: hidden;
+}
+
+
+li{
+	list-style-type: none;
+}
+#divBox {
+	width: 960px;
+	height: 700px;
+	position: relative;
+	margin: 0 auto;
+}
+
+h3{
+	font-size:20px;
+	padding-top:15px;
+	padding-left:70px;
+	
+}
+
+h4{
+	font-size:14px;
+	padding-left:120px;
+	padding-bottom:15px;
+}
+
+
+#divBox form{
+/*	display: none;*/
+color:#FFF;
+font-size:14px;
+padding-left:50px;
+background:url(../images/admin_back.jpg);
+	background-repeat:repeat-x;
+	overflow: hidden;
+	width: 380px;
+	height: 230px;
+	top: 150px;
+	left: 250px;
+	position: absolute;
+}
+
+#divBox #ver{
+	width:65px;	
+}
+
+#divBox form img{
+	position: absolute;
+	left: 210px;
+	top: 132px;
+	width:60px;
+	height:30px;
+	cursor: pointer;
+	display: none;
+	z-index: 2;
+}
+#divBox .four_bj{
+	width: 474px;
+	height: 230px;
+	/*top: -240px;*/
+	top:150px;
+	left: 250px;
+	position: absolute;
+	z-index: -1;
+
+}
+#divBox .four_bj p{
+
+
+}
+#divBox .four_bj p.f_lt{
+	width:237px;
+	height: 123px;
+	position : absolute;
+	top      : 700px;
+	left     : 80px;
+
+}
+#divBox .four_bj p.f_rt{
+	width:237px;
+	height: 123px;
+	position : absolute;
+	top      : 700px;
+	left     : 80px;
+
+}
+#divBox .four_bj p.f_lb{
+	width:237px;
+	height: 107px;
+	position : absolute;
+	top      : 700px;
+	left     : 80px;
+
+}
+#divBox .four_bj p.f_rb{
+	width:237px;
+	height: 107px;
+	position : absolute;
+	top      : 700px;
+	left     : 80px;
+
+}
+
+input{
+	background-color:#FFF;
+	border-color:#FFF;
+	margin:5px;
+}
+
+#divBox form #name{
+	height: 20px;
+	width: 130px;
+}
+
+#divBox form #psd{
+	height: 19px;
+	width: 130px;
+}
+#divBox form #sub{
+	float:right;
+	margin-top:-15px;
+	margin-right:50px;
+	background-image:url(../images/login.jpg);
+	background-repeat:no-repeat;
+	height:60px;
+	width: 90px;
+	cursor:pointer;
+}
+
+/*提示信息*/
+ul#peo{
+	position: absolute;
+	width: 174px;
+	left: 387px;
+	top: 410px;
+}
+ul#psd{
+	position: absolute;
+	width: 174px;
+	left: 387px;
+	top: 440px;
+}
+ul#ver{
+	position: absolute;
+	width: 174px;
+	left: 387px;
+	top: 470px;
+}
+ul li.error{
+	padding-left: 30px;
+	color: #fff;
+	font-size:14px;
+	font-weight: 700;
+	border-radius: 4px;
+	background: url("../images/action_delete.png") no-repeat 5px;
+}
+ul li.success{
+	padding-left: 30px;
+	color: #fff;
+	font-size:14px;
+	font-weight: 700;
+	border-radius: 4px;
+	background: url("../images/action_check.png") no-repeat 5px;
+}

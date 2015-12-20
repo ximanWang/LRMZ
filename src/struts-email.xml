@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+
+   <constant name="struts.devMode" value="true" />
+   <package name="emailTo" namespace="/user" extends="struts-default">
+      
+      <action name="emailer" class="com.lrmz.action.email.Emailer" method="execute">
+         <result name="success">/WEB-INF/user/email/success.jsp</result>
+         <result name="error">/WEB-INF/user/email/error.jsp</result>
+      </action>
+     
+      <action name="toemail">
+      	<result>
+      		/WEB-INF/user/email/emailTo.jsp
+      	</result>
+      </action>
+   </package>
+</struts>

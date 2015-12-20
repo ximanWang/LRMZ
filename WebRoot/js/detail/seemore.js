@@ -1,0 +1,2 @@
+/*TMODJS:{"version":1,"md5":"ab17312f8db6fdc36587a3c927fd8e8a"}*/
+define(["../template",""],function(a){return a("shop/seemore",function(a){"use strict";var b=this,c=(b.$helpers,b.$each),d=a.items,e=(a.value,a.$index,b.$escape),f="";return f+=" <ul> ",c(d,function(a){f+=' <li> <a href="/product-',f+=e(a.itemNum),f+='.html" target="_blank" title="',f+=e(a.title),f+='"> <img alt="',f+=e(a.title),f+='" src="',f+=e(a.picUrl),f+='!wh150" /> <p class="price">',f+=e(a.price),f+="</p> </a> </li> "}),f+=" </ul>",new String(f)})});

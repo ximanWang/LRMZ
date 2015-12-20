@@ -1,0 +1,1 @@
+define(function(){var a=function(a){var b=a,c=$(window),d=null,e=(b.height(),b.offset().top);LIZI.check.isIE6||(d=function(){var a=c.scrollTop();if(a>e){if(b.hasClass("fixed"))return;b.addClass("fixed")}else b.removeClass("fixed")},c.on("scroll",d))};return a});

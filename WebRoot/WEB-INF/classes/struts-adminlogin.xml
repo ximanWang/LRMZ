@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+ <struts>
+ 	<!-- 登录模块 -->
+ 	<package name="adminlogin" namespace="/adminlogin" extends="struts-default">
+ 		<!-- 
+ 			跳转到登录页面的Action
+ 			可以不写class，Struts将默认调用ActionSupport类
+ 			这个类中有方法execute，该方法返回值为success。
+ 		 -->
+ 		<!--登录Action  -->
+ 		<action name="toLogin">
+			<result name="success">
+				/WEB-INF/admin/admin_login.jsp
+			</result>
+		</action>
+ 		<action name="login" class="com.lrmz.action.admin.AdminLoginAction">
+ 			<result name="ok">
+ 				/WEB-INF/admin/admin_index.jsp
+ 			</result>
+ 			<result name="fail">
+ 				/WEB-INF/admin/admin_login.jsp
+ 			</result>
+ 		</action>
+ 		<!-- 生成验证码Action -->
+ 		<action name="createValidateCode" class="com.lrmz.action.CreateValidateCodeAction">
+ 			<result name="success" type="stream">
+ 				<param name="inputName">imageStream</param>
+ 			</result>
+ 		</action>
+ 	</package>                                                          
+
+ </struts>

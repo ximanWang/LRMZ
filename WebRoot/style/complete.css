@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+.main{border: 1px solid #ddd;background-color: #fff;padding: 15px 18px;}
+.title{border-bottom: 1px solid #ddd;padding-bottom: 5px;margin-bottom: 15px;}
+.title h3{float: left;width: 300px;font-size: 18px;}
+
+.pay_info{margin-bottom: 20px;overflow: hidden;width: 600px;-webkit-margin-start: 40px;}
+.pay_info .right{background:url(../images/buy/right.png) no-repeat;width:600px; height:50px;padding:4px 0;}
+.pay_info .right .txt{margin:12px 70px;font-size:14px;}
+.continue{width:84px; margin:12px 110px;font-size:14px;}
+
+.continue .op a{background:url(../images/buy/back.png) left center no-repeat; padding-left:18px;}
+.op a:hover{color:#ff666b;}

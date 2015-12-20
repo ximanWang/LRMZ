@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+ <struts>
+ 	<!-- 引入通用模块配置 -->
+ 	<include file="struts-common.xml"></include>
+
+ 	<!-- 引入后台商品模块配置 -->
+ 	<include file="struts-admin.xml"></include>
+
+ 	<!-- 引入前台商品模块配置 -->
+ 	<include file="struts-user.xml"></include>
+
+ 	<!-- 引入购物车模块 -->
+ 	<include file="struts-cart.xml"></include>
+
+	<!-- 引入订单模块 -->
+ 	<include file="struts-order.xml"></include>
+
+ 	<!-- 引入用户登录注册模块 -->
+ 	<include file="struts-userregister.xml"></include>
+ 	<include file="struts-userlogin.xml"></include>
+
+ 	<!-- 引入收藏夹模块 -->
+ 	<include file="struts-collection.xml"></include>
+
+ 	<!-- 引入邮件发送模块 -->
+ 	<include file="struts-email.xml"></include>
+ </struts>

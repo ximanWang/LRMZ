@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- 
+			数据库连接信息：
+			1、name的值是固定的写法
+			2、property元素里面的内容要改成自己的
+				数据库连接信息
+		-->
+		<!-- <property name="connection.url">
+			jdbc\:mysql\://localhost\:3306/oss?useUnicode\=true&characterEncoding\=utf8
+		</property> -->
+		<property name="connection.url">jdbc:mysql://localhost/lrmz</property>
+        <property name="connection.useUnicode">true</property>
+        <property name="connection.characterEncoding">utf-8</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">zs123</property>
+		<property name="connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+		
+		<!-- Hibernate配置信息 -->
+		<!-- dialect方言，用于配置生成针对哪个数据库的SQL语句 -->
+		<!-- <property name="dialect">
+			方言类，Hibernate提供的，用于封装某种特定数据库的方言
+			org.hibernate.dialect.OracleDialect
+		</property> -->
+		<property name="dialect">
+			org.hibernate.dialect.MySQLDialect
+		</property>
+		
+		<!-- 是否在控制台输出SQL -->
+		<property name="show_sql">true</property>
+		<!-- 是否格式化输出的SQL -->
+		<property name="format_sql">true</property>
+		
+		<!-- 在配置文件中关联映射文件 -->
+		<mapping resource="com/lrmz/entity/Goods.hbm.xml" />
+		<mapping resource="com/lrmz/entity/User.hbm.xml" />
+		<mapping resource="com/lrmz/entity/Cart.hbm.xml" />
+		<mapping resource="com/lrmz/entity/Orders.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

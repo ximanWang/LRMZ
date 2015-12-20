@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+<!-- 定义通用package，封装通用组件 -->
+ 	<package name="lrmz" extends="json-default">
+ 		<interceptors>
+ 	   		<!-- 注册登录拦截器 -->
+ 	   		<interceptor name="loginInter" class="com.lrmz.interceptor.UserLoginInterceptor"></interceptor>
+ 	   		<!-- 注册登录拦截器栈，将登录拦截器和默认拦截器打包-->
+ 	   		<interceptor-stack name="loginStack">
+ 	   			<interceptor-ref name="loginInter"></interceptor-ref>
+ 	   			<interceptor-ref name="defaultStack"></interceptor-ref>
+ 	   		</interceptor-stack>
+ 	   </interceptors>
+ 	   
+ 	   <!-- 指定默认拦截器为登录检查拦截器栈 -->
+ 	   <default-interceptor-ref name="loginStack"></default-interceptor-ref>
+ 	  	
+ 	  	<!-- 定义全局result,这里定义的result在当前package下所有Action共用 -->
+ 	  	<global-results>
+ 	  		<result name="login" type="redirectAction">
+ 	  			<param name="namespace">/user</param>
+ 	  			<param name="actionName">toLogin</param>
+ 	  		</result>
+ 	  		<!-- 跳转到全局error页面 -->
+ 			<result name="error">
+ 				/WEB-INF/main/error.jsp
+ 			</result>
+ 	  	</global-results>
+ 	</package>
+</struts>

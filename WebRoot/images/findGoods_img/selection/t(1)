@@ -1,0 +1,1 @@
+function awslog(url){var n="t_"+(new Date()).getTime()+Math.random()*9999;var c=window[n]=new Image(1,1);c.onload=(c.onerror=function(){window[n]=null});c.src=url;url=null;n=null;c=null};awslog('http://cm.l.qq.com/?dspid=10012&dspuid=MGaBtStP&gettuid=1');;

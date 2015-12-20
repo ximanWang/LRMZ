@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+ <struts>
+ 	<package name="admin" namespace="/admin" extends="struts-default">
+ 		<!-- 显示所有商品 -->
+ 		<action name="findGoods" class="com.lrmz.action.goods.FindGoodsAction" >
+ 			<param name="pageSize">8</param>
+ 			<result name="ok" >
+ 				/WEB-INF/admin/goods_list.jsp
+ 			</result>
+ 		</action>
+ 		<!-- 跳转到修改页面Action -->
+ 		<action name="toUpdateGoods" class="com.lrmz.action.goods.ToUpdateGoodsAction">
+ 			<result name="ok">
+ 				/WEB-INF/admin/goods_detail.jsp
+ 			</result>
+ 		</action>
+ 		<!-- 修改Action -->
+ 		<action name="updateGoods" class="com.lrmz.action.goods.UpdateGoodsAction">
+ 			<result name="ok" type="redirectAction">
+ 				findGoods
+ 			</result>
+ 		</action>
+ 		<!-- 删除Action -->
+ 		<action name="deleteGoods" class="com.lrmz.action.goods.DeleteGoodsAction">
+ 			<result name="ok" type="redirectAction">
+ 				findGoods
+ 			</result>
+ 		</action>
+ 		
+ 		<!-- 跳转到新增页面Action -->
+ 		<action name="toAddGoods">
+ 			<result name="success">
+ 				/WEB-INF/admin/goods_add.jsp
+ 			</result>
+ 		</action>
+ 		<!-- 添加商品Action -->
+ 		<action name="addGoods" class="com.lrmz.action.goods.AddGoodsAction">
+ 			<interceptor-ref name="fileUpload">
+ 				<param name="maximumSize">1000000</param>
+ 			</interceptor-ref>
+ 			<interceptor-ref name="basicStack"></interceptor-ref>
+            <result name="ok" type="redirectAction">
+ 				findGoods
+ 			</result>   
+ 		</action>
+ 		<!-- 显示所有用户 -->
+ 		<action name="findUser" class="com.lrmz.action.user.FindUserAction">
+ 			<param name="pageSize">5</param>
+ 			<result name="ok">
+ 				/WEB-INF/admin/user_list.jsp
+ 			</result>
+ 		</action>
+ 		<action name="findUserById" class="com.lrmz.action.user.FindUserByIdAction">
+ 			<result name="ok">
+ 				/WEB-INF/admin/user_detail.jsp
+ 			</result>
+ 		</action>
+ 		<!-- 删除用户 -->
+ 		<action name="deleteUser" class="com.lrmz.action.user.DeleteUserAction" >
+ 			<result name="ok" type="redirectAction">
+ 				findUser
+ 			</result>
+ 		</action>
+ 	 	</package>
+
+ </struts>

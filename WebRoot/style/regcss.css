@@ -1,0 +1,39 @@
+/* CSS Document */
+dl,dd{
+	 list-style:none;
+	
+}
+dd{
+	 float:left;		
+}
+/*	如果输入错误的话，则这是文本框的样式*/
+	
+.register_input_Blur{
+	background-color:#fef4d0;
+	border:0;border:none;padding:4px 6px;width:265px;height:18px;line-height:18px;overflow:hidden;vertical-align:middle;color:#333;margin-left:2px
+	}
+	/*鼠标单击文本框时文本本框的样式*/
+.register_input_Focus{
+	background-color:#f1ffde;
+	border:0;border:none;padding:4px 6px;width:265px;height:18px;line-height:18px;overflow:hidden;vertical-align:middle;color:#333;margin-left:2px
+	}
+	/*当单击文本框的时候，文本框显示提示文本的样式*/
+.register_prompt{
+	font-size:12px;
+	color:#999;
+	}
+	/*文本框中输入错误的时候，则提示信息的样式*/
+.register_prompt_error{
+	font-size:12px;
+	color:#C8180B;
+	padding:0px 5px 0px 5px;
+	height:18px;
+	}
+	/*输入正确后的提示样式*/
+.register_prompt_ok{
+	background-image:url(images/register_write_ok.jpg);
+	background-repeat:no-repeat;
+	width:15px;
+	height:11px;
+	margin:5px 0px 0px 5px;
+	}

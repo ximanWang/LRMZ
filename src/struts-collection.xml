@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+	<package name="collection" namespace="/user" extends="json-default">
+		<action name="addCollection" class="com.lrmz.action.collection.AddCollectionAction">
+			<result name="ok" type="json">
+				<param name="root">
+					pass
+				</param>
+			</result>
+		</action>
+		
+		<action name="findAllCollection" class="com.lrmz.action.collection.FindAllCollectionAction">
+			<param name="pageSize">12</param>
+			<result name="ok" >
+				/WEB-INF/user/collection.jsp
+			</result>
+		</action>
+		
+		<action name="deleteCollection" class="com.lrmz.action.collection.DeleteCollectionAction">
+			<result name="ok" type="redirectAction">
+				findAllCollection
+			</result>
+		</action>
+	
+	</package>
+
+</struts>
